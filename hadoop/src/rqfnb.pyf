@@ -1,0 +1,24 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module rqfnb ! in 
+    interface  ! in :rqfnb
+        subroutine rqfnb(n,p,a,y,rhs,d,u,beta,eps,wn,wp,nit,info) ! in :rqfnb:rqfnb.f
+            integer, optional,check(shape(a,1)==n),depend(a) :: n=shape(a,1)
+            integer, optional,check(shape(a,0)==p),depend(a) :: p=shape(a,0)
+            double precision dimension(p,n),intent(in) :: a
+            double precision dimension(n),depend(n),intent(in) :: y
+            double precision dimension(p),depend(p),intent(in) :: rhs
+            double precision dimension(n),depend(n),intent(in) :: d
+            double precision dimension(n),depend(n),intent(in) :: u
+            double precision intent(in) :: beta
+            double precision intent(in) :: eps
+            double precision dimension(n,9),depend(n),intent(in,out) :: wn
+            double precision dimension(p,p+3),depend(p),intent(in,out) :: wp
+            integer dimension(3),intent(in,out) :: nit
+            integer intent(in,out) :: info
+        end subroutine rqfnb
+end python module rqfnb
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
