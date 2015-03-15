@@ -1,5 +1,5 @@
 # randomized-quantile-regression-solvers
-Randomized solvers for large-scale quantile regressions
+Solvers for large-scale quantile regressions using randomized numerical linear algebra.
 
 ## About
 Quantile regression is a method to estimate the quantiles of the conditional distribution of a response variable, and as such it permits a much more accurate portrayal of the relationship between the response variable and observed covariates than methods such as Least-squares or Least Absolute Deviations regression. It can be expressed as a linear program, and, with appropriate preprocessing, interior-point methods can be used to find a solution for moderately large problems. Dealing with very large problems, e.g. involving data up to and beyond the terabyte regime, remains a challenge. This work shows a randomized algorithm that runs in nearly linear time in the size of the input and that, with constant probability, computes a $(1+\epsilon)$ approximate solution to an arbitrary quantile regression problem.
