@@ -11,3 +11,16 @@ Implementations in MATLAB and Hadoop are provided in `matlab/` and `hadoop/`, re
 J. Yang, X. Meng, and M. W. Mahoney, [Quantile Regression for Large-scale applications](http://web.stanford.edu/~jiyan/publications/quantreg_icml.pdf). *Proc. of the 30th ICML Conference (2013)*.
 
 J. Yang, X. Meng, and M. W. Mahoney. [Quantile Regression for Large-scale applications](http://web.stanford.edu/~jiyan/publications/quantreg_sisc.pdf). *SIAM J. Scientific Computing, 36(5), S78-S110, 2014*.
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
