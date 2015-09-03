@@ -21,7 +21,7 @@ else
 
 fi
 
-#fectch the solutions back and convert X
+#fetch the solutions back and convert X
 mkdir -p $SUBDIR/X
 rm $SUBDIR/X/*
 for((i=0; i<NUM_REDUCER; i++)); do
